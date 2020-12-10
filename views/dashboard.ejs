@@ -1,0 +1,42 @@
+
+
+<h1 class="mt-4" style="text-align: center;font-weight: bold;color: rgb(23, 60, 128); font-size: 70px;">Criminal Investigation</h1><br><br>
+<p class="lead mb-3" style="font-size: 40px;text-align: center;font-weight: bold; color: rgb(25, 31, 43)">
+  Welcome 
+</p>
+
+<script>
+var d = Date(Date.now()); 
+b=d.ge
+a=d.toString()
+res = a.slice(0,24);
+year=a.slice(11,15)
+date=a.slice(8,11)
+month= a.slice(4,8)
+// document.write(res)
+
+// document.write(date)
+// document.write(month)
+document.write("Date: "+date+" "+month+" "+year)
+</script>
+<br><br>
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+      
+      <a href="/addcase" class="btn btn-primary btn-block mb-2" >Add Case</a>
+      <a href="/addcriminal" class="btn btn-primary btn-block mb-2" >Add Criminal</a>
+      <a href="/predict" class="btn btn-primary btn-block mb-2" >Predict</a>
+      <a href="/casehistory" class="btn btn-primary btn-block mb-2" >Veiw Case History</a>
+      
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+    
+
+<footer style="text-align:center ;">
+  <a href="/users/logout" class="btn btn-secondary" >Logout</a>
+  
+</footer>

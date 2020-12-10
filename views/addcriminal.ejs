@@ -1,0 +1,82 @@
+<h1 class="mt-4" style="text-align: center;font-weight: bold;color: rgb(23, 60, 128); font-size: 50px;">Criminal Investigation</h1>
+
+<h1 class="mt-4" style="text-align: center;font-weight: bold;color: rgb(23, 60, 128); font-size: 50px;">Preles</h1>
+<p class="lead mb-3" style="font-size: 40px;text-align: center;font-weight: bold; color: rgb(25, 31, 43); margin-left: 20px; margin-top: 2px;">
+  Criminal Details
+</p>
+<hr style="color: rgb(97, 97, 204); height:5px; background-color:rgb(97, 97, 204)">
+
+<form action="/addcriminal" method="POST">
+
+  <div class="form-row">
+  
+  
+    <div class="form-item" style="width: 45%; float:left; ">
+      <label for="criminalno">Criminal Id:</label>
+      <input
+        required
+        type="text"
+        id="criminalno"
+        name="criminalno"
+        class="form-control"
+        placeholder="Enter Criminal Id"
+        
+      />
+    </div>
+  
+    
+  
+  </div>
+  
+    
+  
+  <br>
+   <div class="form-row">
+    <div class="form-item" style="width: 50%; float:left; margin-left: 0%; ">
+      <label for="crimecommitted">Crime committed:</label>
+      <input required
+        type="text"
+        id="crimecommitted"
+        name="crimecommitted"
+        class="form-control"
+        placeholder="Enter Crime committed"
+        
+      />
+    </div>
+    
+    
+    <div class="form-item" style="width: 45%; float:left;margin-left: 50px; ">
+      <label for="criminalname">Criminal Name</label>
+      <input required
+        type="text"
+        id="criminalname"
+        name="criminalname"
+        class="form-control"
+        placeholder="Enter Criminal's Name"
+        
+      />
+    </div>
+  </div>
+
+    <br>
+    <div class="form-item">
+      <label for="descriptioncriminal">Description of Criminal: </label><br>
+      <textarea  required name="descriptioncriminal" id ="descriptioncriminal" rows="10" style="width: 100%;"></textarea>
+      
+    </div><br>
+    <hr style="color: rgb(97, 97, 204); height:5px; background-color:rgb(97, 97, 204)">
+
+    <div class="form-row">
+    
+      <div class="form-item" style="width: 48%; margin-left: 30%;">
+        <button type="submit" formaction="/addcriminal" class="btn btn-primary btn-block" onclick="myFunction()" >
+          Save 
+        </button>
+        <script>
+          function myFunction() {
+            alert("New Criminal Added!");
+          }
+          </script>
+                  <button class="btn btn-primary btn-block" style="margin-top: 10px;" onclick="history.go(-2)">Go Back</button>
+
+      </div>

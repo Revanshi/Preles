@@ -1,0 +1,54 @@
+<html lang="en">
+
+<body>
+  
+
+
+    <div id="demo">
+      <br>
+      <h1 style="float: inherit;">Search Result</h1>
+      <br>
+      
+      
+      
+      <div class="table-responsive-vertical shadow-z-1">
+      
+      <table id="table" class="table table-hover table-mc-light-blue">
+          <thead>
+            <tr>
+              <th>Case no.</th>
+              <th>Crime committed</th>
+              <th>Criminal Name</th>
+              <th>Officer Id</th>
+              <th>Officer Name</th>
+              <th>Description of Case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% if (data.length > 0) { %>
+              <% data.forEach(data => { %> 
+            <tr>
+              <td data-title="Case no."><%=data.caseno  %></td>
+              <td data-title="Crime committed"><%= data.crimecommitted%></td>
+              <td data-title="Criminal Name"> <%=data.criminalname %></td>
+              <td data-title="Officer Id"><%=data.officerid %></td>
+              <td data-title="Officer Name"><%=data.officername  %></td>
+              <td data-title="Deascription of Case"><%=data.description %></td>
+
+            </tr>
+            <% }) %> 
+            <% } else { %>
+              <br>
+              <p>There is no data to display...</p>
+            <% } %>
+          </tbody>
+        </table>
+      </div>
+      
+      <button class="btn btn-primary btn-block" style="margin-top: 40px;width: 100px;" onclick="history.go(-2)">Go Back</button>
+      
+    </div>
+
+  
+</body>
+</html>
